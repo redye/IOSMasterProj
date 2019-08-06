@@ -51,7 +51,6 @@
 		D1D7E83F229BC0F9007F4E51 /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D7E83E229BC0F9007F4E51 /* json.json */; };
 		D1D7E843229BD6DB007F4E51 /* BatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7E842229BD6DB007F4E51 /* BatteryViewController.m */; };
 		D1D7E847229BD710007F4E51 /* SMBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7E846229BD710007F4E51 /* SMBatteryMonitor.m */; };
-		D1D7E88A229BE2F5007F4E51 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D7E888229BE197007F4E51 /* IOKit.framework */; };
 		D1D7E88E229CDF9A007F4E51 /* TextureExampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7E88D229CDF9A007F4E51 /* TextureExampViewController.m */; };
 		D1D7E890229D2FAE007F4E51 /* loan.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D7E88F229D2FAE007F4E51 /* loan.json */; };
 		D1D7E896229E177E007F4E51 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7E895229E177E007F4E51 /* ProductDetailViewController.m */; };
@@ -179,8 +178,6 @@
 		D1D7E842229BD6DB007F4E51 /* BatteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryViewController.m; sourceTree = "<group>"; };
 		D1D7E845229BD710007F4E51 /* SMBatteryMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBatteryMonitor.h; sourceTree = "<group>"; };
 		D1D7E846229BD710007F4E51 /* SMBatteryMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBatteryMonitor.m; sourceTree = "<group>"; };
-		D1D7E885229BE139007F4E51 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = IOSMasterProj/Resources/Frameworks/IOKit.framework; sourceTree = "<group>"; };
-		D1D7E888229BE197007F4E51 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 		D1D7E88C229CDF9A007F4E51 /* TextureExampViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureExampViewController.h; sourceTree = "<group>"; };
 		D1D7E88D229CDF9A007F4E51 /* TextureExampViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureExampViewController.m; sourceTree = "<group>"; };
 		D1D7E88F229D2FAE007F4E51 /* loan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loan.json; sourceTree = "<group>"; };
@@ -234,7 +231,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D7E88A229BE2F5007F4E51 /* IOKit.framework in Frameworks */,
 				2D4022911FFC6B1FFCD2E31C /* Pods_IOSMasterProj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +261,6 @@
 			isa = PBXGroup;
 			children = (
 				D114FF7822A6795C0046FFC6 /* XCTest.framework */,
-				D1D7E885229BE139007F4E51 /* IOKit.framework */,
 				9134ACBCF9F7416A56D7E607 /* Pods_IOSMasterProj.framework */,
 				DD7344882F6D763E39519EB1 /* Pods_IOSMasterProjUITests.framework */,
 			);
@@ -505,7 +500,6 @@
 		D1D7E881229BDD92007F4E51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1D7E888229BE197007F4E51 /* IOKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
