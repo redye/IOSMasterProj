@@ -6,14 +6,10 @@
 
 	<script type="text/javascript">
 		function onClick() {
-			// var div = document.createElement('div');
-			// div.innerText = 'head';	
-			// document.body.appendChild(div);
 			alert('title', 'message');
 		}
 
 		function onAlert(title, message) {
-			// alert(title, message);
 			PolyFill.alert(title, message, [{
 				title: '取消',
 				style: 1,
@@ -22,7 +18,7 @@
 				title: '确定',
 				style: 0,
 				callback: 'log'
-			}])
+			}]);
 		}
 
 		function onShare() {

@@ -46,6 +46,10 @@
     context[@"alert"] = ^(NSString *title, NSString *message) {
         [weakSelf alert:title message:message];
     };
+    
+    context[@"add"] = ^(int x, int y) {
+        return x + y;
+    };
 }
 
 - (void)alert:(NSString *)title message:(NSString *)message {
@@ -69,9 +73,14 @@
     JSContext *context = [self currentContext];
     [self addMethonds:context];
     
-    JSValue *getNumber = context[@"getNumber"];
-    JSValue *number = [getNumber callWithArguments:@[@(1)]];
-    NSLog(@"number ==> %@", [number toNumber]);
+//    JSValue *value = [context evaluateScript:@"add(4, 8)"];
+    JSValue *add = context[@"add"];
+    JSValue *value = [add callWithArguments:@[@4, @8]];
+    NSLog(@"value ==> %@", [value toNumber]);
+    
+//    JSValue *getNumber = context[@"getNumber"];
+//    JSValue *number = [getNumber callWithArguments:@[@(1)]];
+//    NSLog(@"number ==> %@", [number toNumber]);
 //    [context evaluateScript:[NSString stringWithFormat:@"alert('当前值', '%@')", [number toNumber]]];
     
     [context evaluateScript:@"var i = 4 + 8;"];
