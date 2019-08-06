@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>测试</title>
+
+	<script type="text/javascript">
+		function onClick() {
+			// var div = document.createElement('div');
+			// div.innerText = 'head';	
+			// document.body.appendChild(div);
+			alert('title', 'message');
+		}
+
+		function onAlert(title, message) {
+			// alert(title, message);
+			PolyFill.alert(title, message, [{
+				title: '取消',
+				style: 1,
+				callback: 'log'
+			}, {
+				title: '确定',
+				style: 0,
+				callback: 'log'
+			}])
+		}
+
+		function onShare() {
+			PolyFill.share({
+				title: 'shareTest'
+			});
+		}
+
+		function log(index) {
+			alert('index', `${index}`);
+		}
+
+		function getNumber(num) {
+			return num * 10;
+		}
+
+	</script>
+</head>
+<body>
+    <h3>这是一个 demo</h3>
+
+    <button onclick="onClick()">添加</button>
+
+    <button onclick="onAlert('title', 'message')">Alert</button>
+
+    <button onclick="onShare()">Share</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+//
+//  IOSMasterProj-PrefixHeader.pch
+//  IOSMasterProj
+//
+//  Created by redye.hu on 2019/5/23.
+//  Copyright © 2019 redye.hu. All rights reserved.
+//
+
+#ifndef IOSMasterProj_PrefixHeader_pch
+#define IOSMasterProj_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import "DDLogMacros.h"
+#import <fishhook/fishhook.h>
+#import <YYModel/YYModel.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <Lottie/Lottie.h>
+#import <PromiseKit/PromiseKit.h>
+#import <yoga/yoga.h>
+#import <YogaKit/YGLayout.h>
+#import <YogaKit/UIView+Yoga.h>
+#import <SDWebImage/SDWebImage.h>
+//#import <Kiwi/Kiwi.h>
+
+#import "Macro/UIMacroDefinition.h"
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
+#endif /* IOSMasterProj_PrefixHeader_pch */
